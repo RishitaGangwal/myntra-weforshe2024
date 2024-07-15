@@ -35,7 +35,7 @@ const DictionaryComponent = () => {
               duration: 2,
               repeat: Infinity,
               repeatType: "reverse",
-              delay: 2, // Delay the start of the second animation
+              delay: 2, 
             }}
           >
             Stay Tuned!

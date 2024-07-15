@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Table, Input, Button } from "antd";
-import Footer from "../Footer/Footer";
 
 const Ranking = () => {
   const [participants, setParticipants] = useState([

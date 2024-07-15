@@ -1,11 +1,7 @@
 import {
   Disclosure,
   DisclosureButton,
-  DisclosurePanel,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuItems,
+  DisclosurePanel
 } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { BiSearch } from "react-icons/bi";
@@ -49,7 +45,6 @@ export default function NavbarSearch() {
       <div className="mx-auto max-w-full px-2 sm:px-6 lg:px-8 ">
         <div className="relative flex h-16 items-center justify-between ">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden ">
-            {/* Mobile menu button */}
             <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-white bg-black hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white z-50 ">
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>
@@ -122,21 +117,6 @@ export default function NavbarSearch() {
               ref={inputRef}
             />
           </div>
-          {/* <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            <button
-              type="button"
-              className="w-[42.5px] h-[42.5px] backdrop-filter backdrop-blur-md bg-[rgba(60,_32,_140,_.2)] flex items-center justify-center border-[1px] border-[solid] border-[#fa8922] rounded-[100%] relative cursor-pointer"
-            >
-              <img
-                src="https://www.stylefest.io/assets/broadcast_or-04af786c.svg"
-                alt=""
-              />
-            </button>
-
-            <span className="text-[#000] whitespace-nowrap bg-[#fff] rounded-[4px] px-[24px] py-[7px] text-[15px] ml-5 font-medium">
-              Sign In
-            </span>
-          </div> */}
           <div className="flex justify-center mt-4 lg:mt-0 gap-7">
             <div>
               <CiUser className="ml-2 " color="black" size={25} />

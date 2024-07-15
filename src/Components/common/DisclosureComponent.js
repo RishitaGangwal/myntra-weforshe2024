@@ -1,13 +1,11 @@
 import {
   Disclosure,
   DisclosureButton,
-  DisclosurePanel,
 } from "@headlessui/react";
 import { FaCaretDown } from "react-icons/fa";
-import { BiCheck } from "react-icons/bi";
 import { MdOutlineSlowMotionVideo } from "react-icons/md";
 import { useState } from "react";
-import { Modal, Button, Form, Input, message } from "antd";
+import { Modal,  Form, Input, message } from "antd";
 
 const DisclosureComponent = ({
   DisclosureImage,

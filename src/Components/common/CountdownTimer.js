@@ -2,7 +2,7 @@ import React from 'react';
 import Countdown from 'react-countdown';
 
 const CountdownTimer = () => {
-  // Target date for countdown (adjust as needed)
+  
   const targetDate = new Date('2024-07-31T00:00:00Z');
 
   return (

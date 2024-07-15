@@ -4,9 +4,8 @@ import {
   BiLogoDiscord,
   BiLogoTelegram,
   BiLogoSpotify,
-  BiLogoPlayStore,
 } from "react-icons/bi";
-import { FaApple, FaFacebookSquare, FaYoutube } from "react-icons/fa";
+import { FaFacebookSquare, FaYoutube } from "react-icons/fa";
 import { TiSocialInstagram } from "react-icons/ti";
 
 const Footer = () => {
@@ -54,10 +53,13 @@ const Footer = () => {
               <img
                 width="150px"
                 src="https://constant.myntassets.com/web/assets/img/80cc455a-92d2-4b5c-a038-7da0d92af33f1539674178924-google_play.png"
+                alt="Myntra"
               />
               <img
                 width="150px"
                 src="https://constant.myntassets.com/web/assets/img/bc5e11ad-0250-420a-ac71-115a57ca35d51539674178941-apple_store.png"
+                 alt="Myntra"
+
               />
             </FooterColumn>
 
@@ -69,43 +71,6 @@ const Footer = () => {
                 <FooterIcon icon={<TiSocialInstagram color="gra-800" />} />
               </div>
             </FooterColumn>
-            {/* <FooterColumn title="">
-              <FooterLink
-                href="https://stylefest-io.notion.site/stylefest-Quests-Campaigns-FAQ-6ac66e1a71374f0b9d1f90fe92c7928f?pvs=4"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Help Center
-              </FooterLink>
-              <FooterLink
-                href="https://app.stylefest.io"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Create your quest
-              </FooterLink>
-              <FooterLink
-                href="https://stylefest.gitbook.io/website-policies/stylefest-terms-of-use"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Terms of Service
-              </FooterLink>
-              <FooterLink
-                href="https://stylefest.gitbook.io/website-policies/stylefest-privacy-policy"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Privacy Policy
-              </FooterLink>
-              <FooterLink
-                href="https://stylefest.gitbook.io/website-policies/stylefest-community-guidelines"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Community Guidelines
-              </FooterLink>
-            </FooterColumn> */}
           </div>
         </div>
         <div className="w-full border-t border-[#2b2b2b] flex flex-col lg:flex-row justify-between items-center mt-[40px] pt-[40px]">

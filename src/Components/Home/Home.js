@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Button } from "@headlessui/react";
-import { FaCaretDown } from "react-icons/fa";
 import "./Home.css";
 import { BiX } from "react-icons/bi";
 import { BsFilePlayFill, BsFillClockFill } from "react-icons/bs";
 import DisclosureComponent from "../common/DisclosureComponent";
-import Footer from "../Footer/Footer";
 import DictionaryComponent from "../common/DictionaryComponent";
 import CountdownTimer from "../common/CountdownTimer";
-import PollingSystem from "../PollingSystem";
 import { Link } from "react-router-dom";
 
 const onChange = (key) => {
@@ -25,17 +22,6 @@ const Home = () => {
 
     return () => clearTimeout(timer);
   }, []);
-
-  //  useEffect(() => {
-  //    const audio = new Audio("");
-  //    audio.volume = 0.5; // Adjust the volume as needed
-  //    audio.loop = true; // Loop the audio
-  //    audio.play();
-
-  //    return () => {
-  //      audio.pause();
-  //    };
-  //  }, []);
 
   return (
     <div className="Home">
@@ -416,8 +402,7 @@ const Home = () => {
 
           <div className="w-[283px] h-[420px] rounded-[16px] border-[1px] border-solid border-[rgba(255,255,255,.2)] bg-[rgba(255,255,255,.05)] flex flex-col justify-between relative overflow-hidden">
             <div className="hidden">
-              <span>
-                <BiX style={{ fontSize: "24px" }} />
+              <span>         <BiX style={{ fontSize: "24px" }} />
               </span>
             </div>
             <div className="block w-full h-full relative">
@@ -453,10 +438,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-
       <section className="bg-white min-h-[1px] max-h-px my-[3rem] opacity-10"></section>
       <DictionaryComponent />
-      {/* <StickyButton /> */}
     </div>
   );
 };
